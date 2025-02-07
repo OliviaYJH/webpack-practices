@@ -4,10 +4,19 @@
 
 @use "variables" as *;
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+html body {
+  margin: 0;
 }
 
 html {
@@ -18,15 +27,14 @@ html {
     font-family: $font-family-body;
     background-color: $bg-body;
 
-    .Header{
+    .Header {
       width: $header-width;
       text-align: $text-align-center;
       margin: $header-margin;
       padding: $header-padding;
       border: $header-border;
       color: $header-color;
-      background-color: $bg-header
+      background-color: $bg-header;
     }
   }
 }
-
